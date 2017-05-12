@@ -26,7 +26,7 @@ define(['marionette','backbone'],function(Marionette,Backbone){
 		},
 		loader: function(arr) {
 			var self = this;
-			this.xhr.open('GET',"/serg/app/templates/"+arr[self.count]+".html",true);
+			this.xhr.open('GET',"/templates/"+arr[self.count]+".html",true);
 			this.xhr.send();
 			this.xhr.onreadystatechange = function() {
 	    		if (self.xhr.readyState != 4) return;

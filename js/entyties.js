@@ -27,7 +27,7 @@ define(['backbone','lib/backbone.localStorage'],function(Backbone){
 
 	var CommShapeCollection = Backbone.Collection.extend({
 		model: ShapeModel,
-		url: '/shapes.json'
+		url: '/js/shapes.json'
 	});
 
 	var CssPropModel = Backbone.Model.extend({
@@ -40,7 +40,7 @@ define(['backbone','lib/backbone.localStorage'],function(Backbone){
 
 	var CssPropCollection = Backbone.Collection.extend({
 		model: CssPropModel,
-	    url: '/props.json',
+	    url: '/js/props.json',
 	});
 
 	return {
